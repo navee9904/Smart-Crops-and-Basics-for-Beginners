@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growing & Plant Health - Smart Crop Guide</title>
+    <meta name="description"
+        content="Daily care routines, watering schedules, and monitoring techniques for healthy, thriving plants.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="index.html" class="active">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Growing & Plant Health</h1>
+            <p>From soil preparation to harvest, master the art of nurturing healthy plants.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><span class="current">Growing</span></li>
+                </ol>
+            </nav>
+            <a href="../index.html" class="back-btn">Back to Home</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>The Growing Journey</h2>
+                    <p>Successful cultivation is a journey from seed to harvest. Along the way, you'll learn to read
+                        your plants—understanding their signals for water, nutrients, and light.</p>
+                    <p>This section covers everything from planting techniques to troubleshooting common problems.</p>
+
+                    <div class="btn-row">
+                        <a href="how-to-grow.html" class="btn btn-primary">Growing Guide</a>
+                        <a href="common-diseases.html" class="btn btn-secondary">Troubleshooting</a>
+                    </div>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/seed-planting.jpg" alt="Planting seeds" loading="lazy">
+                    </div>
+                    <div class="collage-accent">
+                        <img src="../images/greenhouse-rows.jpg" alt="Greenhouse plants" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Essential Growing Practices</h2>
+                <p>Master these fundamentals for a thriving garden.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>Watering</h3>
+                    <p>Water deeply but infrequently to encourage deep root growth. Morning watering reduces disease.
+                        Avoid wetting leaves.</p>
+                </article>
+                <article>
+                    <h3>Spacing</h3>
+                    <p>Crowded plants compete for resources and develop disease. Follow recommended spacing for airflow
+                        and light penetration.</p>
+                </article>
+                <article>
+                    <h3>Mulching</h3>
+                    <p>A layer of organic mulch conserves moisture, suppresses weeds, and regulates soil temperature.
+                        Apply 2-4 inches around plants.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Watch: Growing Basics</h2>
+                <p>A visual guide to essential techniques.</p>
+            </div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/KY2MhKspNBc" title="Growing Basics Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>Pro Tip</h4>
+                <p>Keep a garden journal! Record planting dates, weather, and observations. Over seasons, you'll build
+                    invaluable local knowledge.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>Empowering growers with world-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links">
+                    <a href="../seeds/index.html">Seeds</a>
+                    <a href="../fertilizers/index.html">Fertilizers</a>
+                    <a href="index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links">
+                    <a href="../contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

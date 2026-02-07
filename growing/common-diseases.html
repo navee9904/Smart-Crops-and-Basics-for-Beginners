@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Diseases - Smart Crop Guide</title>
+    <meta name="description" content="Identify and treat the most common plant diseases.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Custom creative styles for disease cards */
+        .disease-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .disease-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .disease-card-header {
+            padding: 1.5rem;
+            color: white;
+            position: relative;
+        }
+
+        .disease-card-header.fungal {
+            background: linear-gradient(135deg, #4a148c, #7b1fa2);
+        }
+
+        .disease-card-header.bacterial {
+            background: linear-gradient(135deg, #bf360c, #e64a19);
+        }
+
+        .disease-card-header.viral {
+            background: linear-gradient(135deg, #1565c0, #1976d2);
+        }
+
+        .disease-card-header h3 {
+            color: white;
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .disease-card-body {
+            padding: 1.5rem;
+        }
+
+        .symptom-tag {
+            display: inline-block;
+            background: #ffebee;
+            color: #c62828;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 0.25rem;
+        }
+
+        .treatment-tag {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 0.25rem;
+        }
+
+        .severity-indicator {
+            display: flex;
+            gap: 0.25rem;
+            margin-top: 1rem;
+        }
+
+        .severity-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #e0e0e0;
+        }
+
+        .severity-dot.active {
+            background: #f44336;
+        }
+
+        .severity-label {
+            font-size: 0.8rem;
+            color: var(--clr-text-muted);
+            margin-left: 0.5rem;
+        }
+
+        .prevention-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .prevention-item {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .prevention-item:hover {
+            transform: scale(1.03);
+        }
+
+        .prevention-item .icon {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .alert-banner {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border-left: 5px solid #ff9800;
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .alert-banner h4 {
+            color: #e65100;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand"><span class="logo-icon"></span><span>Smart Crop Guide</span></a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="index.html" class="active">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>🦠 Common Plant Diseases</h1>
+            <p>Identify, treat, and prevent crop diseases</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Growing</a></li>
+                    <li><span class="current">Common Diseases</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <!-- Hero Section with Image -->
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Know Your Enemy</h2>
+                    <p>Plant diseases can devastate your crops if left unchecked. The key to successful disease
+                        management is <strong>early identification</strong>—catching problems before they spread.</p>
+                    <p>This guide covers the most common diseases you'll encounter, organized by type, with clear
+                        symptoms and proven treatment options.</p>
+
+                    <div class="alert-banner">
+                        <h4>⚠️ Quick Tip</h4>
+                        <p>When you spot disease symptoms, act within 24-48 hours. Many diseases spread exponentially,
+                            and waiting even a few days can mean the difference between losing one plant and losing your
+                            entire crop.</p>
+                    </div>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/plant-disease-leaf.jpg"
+                            alt="Close-up of plant leaves showing disease symptoms" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fungal Diseases -->
+        <section class="container section">
+            <div class="section-header">
+                <h2>🍄 Fungal Diseases</h2>
+                <p>The most common plant diseases—caused by moisture and poor air circulation</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="disease-card">
+                    <div class="disease-card-header fungal">
+                        <h3>Powdery Mildew</h3>
+                    </div>
+                    <div class="disease-card-body">
+                        <p><strong>Symptoms:</strong></p>
+                        <span class="symptom-tag">White powder on leaves</span>
+                        <span class="symptom-tag">Curled leaves</span>
+
+                        <p style="margin-top: 1rem;"><strong>Treatment:</strong></p>
+                        <span class="treatment-tag">Improve airflow</span>
+                        <span class="treatment-tag">Sulfur spray</span>
+                        <span class="treatment-tag">Baking soda mix</span>
+
+                        <div class="severity-indicator">
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot"></span>
+                            <span class="severity-label">Moderate severity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disease-card">
+                    <div class="disease-card-header fungal">
+                        <h3>Blight</h3>
+                    </div>
+                    <div class="disease-card-body">
+                        <p><strong>Symptoms:</strong></p>
+                        <span class="symptom-tag">Brown/black spots</span>
+                        <span class="symptom-tag">Rapid wilting</span>
+                        <span class="symptom-tag">Spreads fast</span>
+
+                        <p style="margin-top: 1rem;"><strong>Treatment:</strong></p>
+                        <span class="treatment-tag">Remove affected parts</span>
+                        <span class="treatment-tag">Copper fungicide</span>
+
+                        <div class="severity-indicator">
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot active"></span>
+                            <span class="severity-label">High severity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disease-card">
+                    <div class="disease-card-header fungal">
+                        <h3>Root Rot</h3>
+                    </div>
+                    <div class="disease-card-body">
+                        <p><strong>Symptoms:</strong></p>
+                        <span class="symptom-tag">Yellowing leaves</span>
+                        <span class="symptom-tag">Mushy roots</span>
+                        <span class="symptom-tag">Stunted growth</span>
+
+                        <p style="margin-top: 1rem;"><strong>Treatment:</strong></p>
+                        <span class="treatment-tag">Reduce watering</span>
+                        <span class="treatment-tag">Improve drainage</span>
+
+                        <div class="severity-indicator">
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot active"></span>
+                            <span class="severity-label">High severity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bacterial & Viral -->
+        <section class="container section">
+            <div class="section-header">
+                <h2>🧬 Bacterial & Viral Diseases</h2>
+                <p>Harder to treat—prevention is your best defense</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="disease-card">
+                    <div class="disease-card-header bacterial">
+                        <h3>Bacterial Leaf Spot</h3>
+                    </div>
+                    <div class="disease-card-body">
+                        <p><strong>Symptoms:</strong></p>
+                        <span class="symptom-tag">Water-soaked spots</span>
+                        <span class="symptom-tag">Yellow halos</span>
+                        <span class="symptom-tag">Leaf drop</span>
+
+                        <p style="margin-top: 1rem;"><strong>Treatment:</strong></p>
+                        <span class="treatment-tag">Remove infected leaves</span>
+                        <span class="treatment-tag">Avoid overhead watering</span>
+                        <span class="treatment-tag">Copper sprays</span>
+
+                        <div class="severity-indicator">
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot"></span>
+                            <span class="severity-label">Moderate severity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disease-card">
+                    <div class="disease-card-header viral">
+                        <h3>Mosaic Virus</h3>
+                    </div>
+                    <div class="disease-card-body">
+                        <p><strong>Symptoms:</strong></p>
+                        <span class="symptom-tag">Mottled yellow/green</span>
+                        <span class="symptom-tag">Stunted growth</span>
+                        <span class="symptom-tag">Deformed leaves</span>
+
+                        <p style="margin-top: 1rem;"><strong>Treatment:</strong></p>
+                        <span class="treatment-tag">No cure exists</span>
+                        <span class="treatment-tag">Remove infected plants</span>
+                        <span class="treatment-tag">Control aphids</span>
+
+                        <div class="severity-indicator">
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot active"></span>
+                            <span class="severity-dot active"></span>
+                            <span class="severity-label">High severity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prevention Section -->
+        <section class="container section">
+            <div class="section-header">
+                <h2>🛡️ Prevention Strategies</h2>
+                <p>The best treatment is prevention—follow these practices</p>
+            </div>
+
+            <div class="prevention-grid">
+                <div class="prevention-item">
+                    <span class="icon">💧</span>
+                    <h4>Water at Soil Level</h4>
+                    <p>Wet leaves spread disease. Use drip irrigation or water at the base.</p>
+                </div>
+                <div class="prevention-item">
+                    <span class="icon">🌬️</span>
+                    <h4>Good Airflow</h4>
+                    <p>Space plants properly. Prune for circulation. Fungi love still, humid air.</p>
+                </div>
+                <div class="prevention-item">
+                    <span class="icon">🧹</span>
+                    <h4>Clean Garden</h4>
+                    <p>Remove debris. Clean tools between plants. Don't compost diseased material.</p>
+                </div>
+                <div class="prevention-item">
+                    <span class="icon">🔄</span>
+                    <h4>Rotate Crops</h4>
+                    <p>Don't plant the same family in the same spot. Breaks disease cycles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pro Tip -->
+        <section class="container section">
+            <div class="tip-box">
+                <h4>🌟 Prevention is 10x Easier Than Cure</h4>
+                <p>Most plant diseases thrive in wet, crowded conditions. Simply by watering at soil level, providing
+                    good plant spacing, and keeping your garden clean, you can prevent <strong>90% of common
+                        diseases</strong> before they even start.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Growing</a><a href="../organic/index.html">Organic</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

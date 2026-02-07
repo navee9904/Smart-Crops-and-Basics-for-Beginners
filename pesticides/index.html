@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesticides - Smart Crop Guide</title>
+    <meta name="description"
+        content="Integrated pest management strategies. Learn to protect your crops from insects and pests responsibly.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../fungicides/index.html">Fungicides</a></li>
+                <li><a href="index.html" class="active">Pesticides</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Pesticides & Pest Control</h1>
+            <p>Integrated strategies to protect your crops while minimizing environmental impact.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><span class="current">Pesticides</span></li>
+                </ol>
+            </nav>
+            <a href="../index.html" class="back-btn">Back to Home</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Integrated Pest Management</h2>
+                    <p>Modern pest control is about more than just spraying chemicals. Integrated Pest Management (IPM)
+                        combines biological, cultural, and chemical methods to control pests sustainably.</p>
+                    <p>The goal is not to eliminate all pests, but to keep them below damaging levels while preserving
+                        beneficial insects and the ecosystem.</p>
+
+                    <div class="btn-row">
+                        <a href="safe-use.html" class="btn btn-primary">Safe Application</a>
+                        <a href="non-chemical.html" class="btn btn-secondary">Non-Chemical Methods</a>
+                    </div>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/pesticide-sprayer.jpg" alt="Crop spraying" loading="lazy">
+                    </div>
+                    <div class="collage-accent">
+                        <img src="../images/harvest-hands.jpg" alt="Healthy harvest" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Common Crop Pests</h2>
+                <p>Identify these threats before they damage your yield.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>Aphids</h3>
+                    <p>Tiny sap-sucking insects that cluster on new growth. They spread viruses and weaken plants.
+                        Ladybugs are natural predators.</p>
+                </article>
+                <article>
+                    <h3>Caterpillars</h3>
+                    <p>Larvae of moths and butterflies that chew leaves. Handpicking works for small infestations. Bt
+                        (Bacillus thuringiensis) is an organic option.</p>
+                </article>
+                <article>
+                    <h3>Whiteflies</h3>
+                    <p>Small white-winged insects that cause yellowing. Sticky traps help monitor populations. Neem oil
+                        is effective for control.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="callout-warning">
+                <h3>Responsible Use</h3>
+                <p>Always follow label instructions. Spray during calm weather, avoid blooming periods to protect
+                    pollinators, and never exceed recommended dosages.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>Empowering growers with world-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links">
+                    <a href="../seeds/index.html">Seeds</a>
+                    <a href="../fertilizers/index.html">Fertilizers</a>
+                    <a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links">
+                    <a href="../contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Types - Smart Crop Guide</title>
+    <meta name="description"
+        content="Learn about vegetables, fruits, and field crops. Understand growth cycles and choose the right plant type for your garden.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html" class="active">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Plant Types</h1>
+            <p>Understanding the main categories of plants you can grow.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Seeds</a></li>
+                    <li><span class="current">Plant Types</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Three Main Plant Categories</h2>
+                    <p>Most cultivated plants fall into three categories: <strong>vegetables</strong>,
+                        <strong>fruits</strong>, and <strong>field crops</strong>. Each has different growth habits,
+                        time requirements, and uses.</p>
+                    <p>Understanding these helps you set realistic expectations and choose crops that match your goals.
+                    </p>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/vegetable-field.jpg" alt="Vegetable field" loading="lazy">
+                    </div>
+                    <div class="collage-accent">
+                        <img src="../images/apple-tree.jpg" alt="Fruit tree" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Plant Type Details</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>🥬 Vegetables</h3>
+                    <p>Short-season crops harvested for leaves, roots, stems, or fruits. Examples: tomatoes, cabbage,
+                        beans. Most complete growth in 30-120 days—perfect for beginners wanting quick results.</p>
+                </article>
+                <article>
+                    <h3>🍎 Fruits</h3>
+                    <p>Trees, shrubs, and vines producing edible fruits. Examples: mango, banana, citrus. Perennial
+                        plants that require patience—often 2-5 years to first harvest but produce for decades.</p>
+                </article>
+                <article>
+                    <h3>🌾 Field Crops</h3>
+                    <p>Large-scale staples forming the backbone of food production. Examples: rice, maize, wheat.
+                        Require more land but some (like corn) can be grown in backyard gardens.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Comparison Table</h2>
+            </div>
+
+            <table class="compare">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Examples</th>
+                        <th>Growth Cycle</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vegetables</td>
+                        <td>Tomato, lettuce, beans</td>
+                        <td>30-120 days</td>
+                        <td>Beginners, quick results</td>
+                    </tr>
+                    <tr>
+                        <td>Fruits</td>
+                        <td>Mango, citrus, grapes</td>
+                        <td>2-5+ years to harvest</td>
+                        <td>Long-term investment</td>
+                    </tr>
+                    <tr>
+                        <td>Field Crops</td>
+                        <td>Rice, wheat, corn</td>
+                        <td>90-180 days</td>
+                        <td>Larger plots, staple food</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>Match Plants to Space</h4>
+                <p>Small balcony? Start with container vegetables. Backyard? Add a fruit tree alongside veggies for
+                    long-term rewards.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Seeds</a><a
+                        href="../fertilizers/index.html">Fertilizers</a></div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

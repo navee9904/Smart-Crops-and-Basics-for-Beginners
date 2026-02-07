@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Application - Smart Crop Guide</title>
+    <meta name="description" content="Learn proper fertilizer application techniques for maximum effectiveness.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="index.html" class="active">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Fertilizer Application</h1>
+            <p>Timing, methods, and best practices for effective feeding.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Fertilizers</a></li>
+                    <li><span class="current">Application</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>The Art of Fertilizer Application</h2>
+                    <p>Knowing <strong>what</strong> to apply is just half the battle—<strong>how</strong> and
+                        <strong>when</strong> you apply it determines whether your plants actually benefit.</p>
+                    <p>Proper application ensures nutrients reach the root zone efficiently, minimizes waste, and
+                        protects the environment from runoff.</p>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/fertilizer-application.jpg" alt="Farmer applying fertilizer to crops"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Application Methods</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <article>
+                    <h3>Broadcasting</h3>
+                    <p>Spreading fertilizer evenly over the soil surface. Good for lawns and pre-planting preparation.
+                        Work into soil for best results.</p>
+                </article>
+                <article>
+                    <h3>Side-dressing</h3>
+                    <p>Applying fertilizer in bands alongside growing plants. Ideal for mid-season nitrogen boost
+                        without disturbing roots.</p>
+                </article>
+                <article>
+                    <h3>Foliar Feeding</h3>
+                    <p>Spraying diluted fertilizer on leaves. Quick uptake for micronutrient deficiencies. Apply early
+                        morning or evening.</p>
+                </article>
+                <article>
+                    <h3>Fertigation</h3>
+                    <p>Delivering fertilizer through irrigation water. Provides consistent, efficient feeding. Common in
+                        drip systems.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Timing Guide</h2>
+            </div>
+
+            <table class="compare">
+                <thead>
+                    <tr>
+                        <th>Growth Stage</th>
+                        <th>Focus</th>
+                        <th>Recommended</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Transplanting</td>
+                        <td>Root establishment</td>
+                        <td>Phosphorus-rich (e.g., 5-10-5)</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetative</td>
+                        <td>Leaf & stem growth</td>
+                        <td>Nitrogen-rich (e.g., 20-10-10)</td>
+                    </tr>
+                    <tr>
+                        <td>Flowering</td>
+                        <td>Blooms & fruit set</td>
+                        <td>Balanced (e.g., 10-10-10)</td>
+                    </tr>
+                    <tr>
+                        <td>Fruiting</td>
+                        <td>Fruit development</td>
+                        <td>Potassium-rich (e.g., 5-10-15)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container section">
+            <div class="callout-warning">
+                <h3>⚠️ Avoid Over-fertilizing</h3>
+                <p>More is not better. Excess fertilizer burns roots, pollutes water, and wastes money. Always follow
+                    label rates and test soil before major applications.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Fertilizers</a><a
+                        href="../growing/index.html">Growing</a></div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

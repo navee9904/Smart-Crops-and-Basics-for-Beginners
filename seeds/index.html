@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeds & Crop Selection - Smart Crop Guide</title>
+    <meta name="description"
+        content="Master seed selection and crop planning. Learn to choose high-quality seeds and match crops to your climate for maximum yield.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html" class="active">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Seeds & Crop Selection</h1>
+            <p>The foundation of every successful harvest starts with the right seed.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><span class="current">Seeds & Crops</span></li>
+                </ol>
+            </nav>
+            <a href="../index.html" class="back-btn">Back to Home</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Why Seeds Matter</h2>
+                    <p>The quality of your seeds determines germination rates, plant vigor, and eventual yield.
+                        Understanding seed selection is the first step to agricultural success.</p>
+                    <p><strong>Seed quality</strong> affects germination, while <strong>crop matching</strong> ensures
+                        plants thrive in your specific climate and soil conditions.</p>
+
+                    <div class="btn-row">
+                        <a href="plant-types.html" class="btn btn-primary">Plant Types</a>
+                        <a href="selecting-seeds.html" class="btn btn-secondary">Selecting Seeds</a>
+                        <a href="choosing-crops.html" class="btn btn-secondary">Choosing Crops</a>
+                    </div>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/seeds-closeup.jpg" alt="Assorted seeds" loading="lazy">
+                    </div>
+                    <div class="collage-accent">
+                        <img src="../images/crop-rows-aerial.jpg" alt="Crop rows" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Major Crop Groups</h2>
+                <p>Quick reference for the main categories of plants.</p>
+            </div>
+
+            <table class="compare">
+                <thead>
+                    <tr>
+                        <th>Crop Group</th>
+                        <th>Examples</th>
+                        <th>Typical Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vegetables</td>
+                        <td>Tomatoes, lettuce, carrots, beans</td>
+                        <td>Fresh consumption, home gardens</td>
+                    </tr>
+                    <tr>
+                        <td>Fruits</td>
+                        <td>Mangoes, bananas, citrus</td>
+                        <td>Fresh eating, juices, preserves</td>
+                    </tr>
+                    <tr>
+                        <td>Field Crops</td>
+                        <td>Rice, maize, wheat, soybeans</td>
+                        <td>Staple food, animal feed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>Getting Started</h4>
+                <p>New to gardening? Start with easy crops like lettuce, radishes, or beans. They grow quickly and are
+                    forgiving of beginner mistakes.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>Empowering growers with world-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links">
+                    <a href="index.html">Seeds</a>
+                    <a href="../fertilizers/index.html">Fertilizers</a>
+                    <a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links">
+                    <a href="../contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

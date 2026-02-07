@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary Nutrients (NPK) - Smart Crop Guide</title>
+    <meta name="description" content="Understand the role of Nitrogen, Phosphorus, and Potassium in plant growth.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="index.html" class="active">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Primary Nutrients (NPK)</h1>
+            <p>The essential building blocks for plant growth.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Fertilizers</a></li>
+                    <li><span class="current">Primary Nutrients</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Understanding NPK</h2>
+                    <p>Every fertilizer bag displays an NPK ratio (e.g., 10-10-10). These numbers represent the
+                        percentage of <strong>Nitrogen</strong>, <strong>Phosphorus</strong>, and
+                        <strong>Potassium</strong>.</p>
+                    <p>Each nutrient plays a distinct role in plant development. Understanding this helps you choose the
+                        right fertilizer for each growth stage.</p>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/fertilizer-granules.jpg" alt="Fertilizer granules" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>The Big Three</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>Nitrogen (N)</h3>
+                    <p><strong>Function:</strong> Promotes leafy, green growth. Essential for photosynthesis.</p>
+                    <p><strong>Deficiency Signs:</strong> Yellowing leaves (especially older ones), stunted growth.</p>
+                    <p><strong>Best For:</strong> Leafy vegetables, lawns, early growth stages.</p>
+                </article>
+                <article>
+                    <h3>Phosphorus (P)</h3>
+                    <p><strong>Function:</strong> Supports root development, flowering, and fruit set.</p>
+                    <p><strong>Deficiency Signs:</strong> Purple-tinged leaves, poor root growth, delayed flowering.</p>
+                    <p><strong>Best For:</strong> Transplants, fruiting crops, early establishment.</p>
+                </article>
+                <article>
+                    <h3>Potassium (K)</h3>
+                    <p><strong>Function:</strong> Strengthens overall plant health, disease resistance, and drought
+                        tolerance.</p>
+                    <p><strong>Deficiency Signs:</strong> Brown leaf edges, weak stems, poor fruit quality.</p>
+                    <p><strong>Best For:</strong> Fruit quality, stress tolerance, mature plants.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Common NPK Ratios</h2>
+            </div>
+
+            <table class="compare">
+                <thead>
+                    <tr>
+                        <th>Ratio</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10-10-10</td>
+                        <td>Balanced, general purpose</td>
+                    </tr>
+                    <tr>
+                        <td>20-10-10</td>
+                        <td>Lawns, leafy vegetables</td>
+                    </tr>
+                    <tr>
+                        <td>5-10-10</td>
+                        <td>Root crops, flowering plants</td>
+                    </tr>
+                    <tr>
+                        <td>0-10-10</td>
+                        <td>Fruit development, late season</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>Start Balanced</h4>
+                <p>New to fertilizing? A balanced 10-10-10 works for most situations. As you learn your crops' needs,
+                    adjust the ratio accordingly.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Fertilizers</a><a
+                        href="../growing/index.html">Growing</a></div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

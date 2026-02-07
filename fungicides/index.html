@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungicides - Smart Crop Guide</title>
+    <meta name="description"
+        content="Protect your crops from fungal diseases. Learn about different types of fungicides and how to use them safely.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="index.html" class="active">Fungicides</a></li>
+                <li><a href="../pesticides/index.html">Pesticides</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Fungicides & Disease Control</h1>
+            <p>Identify, prevent, and treat fungal diseases that threaten your crops.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><span class="current">Fungicides</span></li>
+                </ol>
+            </nav>
+            <a href="../index.html" class="back-btn">Back to Home</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Understanding Fungal Diseases</h2>
+                    <p>Fungi are among the most common causes of crop loss worldwide. From powdery mildew to blight,
+                        fungal infections can devastate your plants if left unchecked.</p>
+                    <p>Learn to recognize symptoms early, choose the right fungicide, and apply it safely for effective
+                        disease management.</p>
+
+                    <div class="btn-row">
+                        <a href="types.html" class="btn btn-primary">Types of Fungicides</a>
+                        <a href="use-safely.html" class="btn btn-secondary">Safe Application</a>
+                    </div>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/leaf-disease.jpg" alt="Leaf with fungal disease" loading="lazy">
+                    </div>
+                    <div class="collage-accent">
+                        <img src="../images/pesticide-sprayer.jpg" alt="Sprayer application" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Common Fungal Diseases</h2>
+                <p>Know your enemy to protect your crops.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>Powdery Mildew</h3>
+                    <p>White, powdery coating on leaves. Common in squash, cucumbers, and roses. Thrives in humid
+                        conditions.</p>
+                </article>
+                <article>
+                    <h3>Blight</h3>
+                    <p>Rapid browning and wilting. Affects tomatoes and potatoes. Can destroy crops within days.</p>
+                </article>
+                <article>
+                    <h3>Root Rot</h3>
+                    <p>Caused by overwatering. Plants wilt despite moist soil. Prevention is key—improve drainage.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="callout-warning">
+                <h3>Safety First</h3>
+                <p>Always read fungicide labels carefully. Wear protective gear during application and observe
+                    pre-harvest intervals before consuming treated crops.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>Empowering growers with world-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links">
+                    <a href="../seeds/index.html">Seeds</a>
+                    <a href="../fertilizers/index.html">Fertilizers</a>
+                    <a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links">
+                    <a href="../contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

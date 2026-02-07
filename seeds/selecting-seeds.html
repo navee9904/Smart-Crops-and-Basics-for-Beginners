@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting Seeds - Smart Crop Guide</title>
+    <meta name="description"
+        content="Learn to evaluate seed quality: purity, germination rate, moisture content, and disease-free status.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html" class="active">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Selecting Seeds</h1>
+            <p>How to evaluate seed quality and make informed purchases.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Seeds</a></li>
+                    <li><span class="current">Selecting Seeds</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Why Seed Quality Matters</h2>
+                    <p>The quality of seeds directly determines germination success, plant vigor, and yield. Poor seeds
+                        waste time, money, and effort.</p>
+                    <p>Four key criteria: <strong>purity</strong>, <strong>germination rate</strong>, <strong>moisture
+                            content</strong>, and <strong>disease-free</strong> status.</p>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/seeds-closeup.jpg" alt="Seeds closeup" loading="lazy">
+                    </div>
+                    <div class="collage-accent">
+                        <img src="../images/seed-planting.jpg" alt="Planting seeds" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Quality Factors</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <article>
+                    <h3>Purity (98%+)</h3>
+                    <p>Proportion of true crop seeds vs contaminants (weed seeds, debris). High purity ensures you grow
+                        what you intend.</p>
+                </article>
+                <article>
+                    <h3>Germination Rate (85%+)</h3>
+                    <p>Percentage of seeds that will sprout. Low rates mean planting more seeds for the same number of
+                        plants.</p>
+                </article>
+                <article>
+                    <h3>Moisture Content (8-12%)</h3>
+                    <p>Seeds must be properly dried for storage. Excess moisture causes fungal growth and premature
+                        germination.</p>
+                </article>
+                <article>
+                    <h3>Disease-Free</h3>
+                    <p>Certified seeds are tested and treated to eliminate seed-borne pathogens. Prevents crop losses
+                        from the start.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Certified vs Saved Seeds</h2>
+            </div>
+
+            <table class="compare">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Certified Seeds</th>
+                        <th>Saved Seeds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quality</td>
+                        <td>Guaranteed standards</td>
+                        <td>Variable, can decline</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>Higher upfront</td>
+                        <td>Free (from harvest)</td>
+                    </tr>
+                    <tr>
+                        <td>Disease Risk</td>
+                        <td>Tested & treated</td>
+                        <td>May accumulate pathogens</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container section">
+            <div class="callout-warning">
+                <h3>⚠️ Avoid Unreliable Sources</h3>
+                <p>Seeds from unverified vendors may have low germination, poor purity, or carry diseases. Always buy
+                    from reputable suppliers with certification marks.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Seeds</a><a
+                        href="../fertilizers/index.html">Fertilizers</a></div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

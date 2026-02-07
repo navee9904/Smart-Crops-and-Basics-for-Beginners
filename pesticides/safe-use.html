@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Pesticide Use - Smart Crop Guide</title>
+    <meta name="description" content="Essential safety practices for applying pesticides responsibly.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand"><span class="logo-icon"></span><span>Smart Crop Guide</span></a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="index.html" class="active">Pesticides</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Safe Pesticide Application</h1>
+            <p>Effective pest control with minimal environmental impact.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Pesticides</a></li>
+                    <li><span class="current">Safe Use</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Safety First, Always</h2>
+                    <p>Pesticides are powerful tools that demand respect. When used properly, they protect your crops
+                        and your investment. When mishandled, they can harm you, your family, beneficial insects, and
+                        the environment.</p>
+                    <p>Following proper safety protocols isn't just about compliance—it's about protecting what matters
+                        most while achieving effective pest control.</p>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/pesticide-safety-gear.jpg"
+                            alt="Farmer with protective safety gear for pesticide application" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Before Spraying</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <article>
+                    <h3>✅ Confirm the Pest</h3>
+                    <p>Identify the pest correctly before treatment. Misidentification wastes product and may harm
+                        beneficial insects.</p>
+                </article>
+                <article>
+                    <h3>📊 Assess Threshold</h3>
+                    <p>A few pests are normal. Only spray when populations exceed damage thresholds. Monitor regularly.
+                    </p>
+                </article>
+                <article>
+                    <h3>🎯 Choose Selectively</h3>
+                    <p>Use the most targeted product available. Broad-spectrum pesticides kill beneficials along with
+                        pests.</p>
+                </article>
+                <article>
+                    <h3>📅 Time It Right</h3>
+                    <p>Apply early morning or evening when beneficials are less active. Avoid spraying during bloom to
+                        protect pollinators.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>During Application</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>🥽 Wear PPE</h3>
+                    <p>Gloves, goggles, long clothing, and respirator if required by label.</p>
+                </article>
+                <article>
+                    <h3>🌬️ Check Wind</h3>
+                    <p>Don't spray if wind exceeds 10 mph. Drift harms non-target areas.</p>
+                </article>
+                <article>
+                    <h3>💧 No Rain</h3>
+                    <p>Don't apply if rain is expected within 24 hours. Product washes away.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="callout-warning">
+                <h3>⚠️ Protect Pollinators</h3>
+                <p>Never spray when flowers are open or bees are foraging. Apply in evening when bees return to hives.
+                    Choose bee-safe products when possible.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Pesticides</a><a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

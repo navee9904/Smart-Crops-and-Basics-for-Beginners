@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Pest & Disease Control - Smart Crop Guide</title>
+    <meta name="description" content="Natural methods to protect your crops without synthetic chemicals.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand"><span class="logo-icon"></span><span>Smart Crop Guide</span></a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="index.html" class="active">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Organic Pest & Disease Control</h1>
+            <p>Protect your plants the natural way.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Organic</a></li>
+                    <li><span class="current">Pest & Disease</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Prevention First</h2>
+                <p>Healthy plants resist pests and disease better.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>🌱 Healthy Soil</h3>
+                    <p>Well-fed plants have stronger immune systems. Build soil organic matter and avoid synthetic
+                        fertilizers that create weak, sappy growth.</p>
+                </article>
+                <article>
+                    <h3>🔄 Diversity</h3>
+                    <p>Monocultures attract pests. Mix plant families, add flowers for beneficials, and rotate crops
+                        annually.</p>
+                </article>
+                <article>
+                    <h3>💧 Proper Watering</h3>
+                    <p>Overhead watering spreads disease. Water at soil level in morning. Stressed plants (too wet or
+                        too dry) attract problems.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Organic Pest Solutions</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>🐞 Beneficial Insects</h3>
+                    <p>Ladybugs, lacewings, and parasitic wasps hunt pests. Plant dill, fennel, and alyssum to attract
+                        them.</p>
+                </article>
+                <article>
+                    <h3>🧄 Homemade Sprays</h3>
+                    <p>Garlic spray repels soft-bodied insects. Soap spray kills aphids on contact. Neem oil works on
+                        many pests.</p>
+                </article>
+                <article>
+                    <h3>🪤 Physical Barriers</h3>
+                    <p>Row covers block flying pests. Copper tape stops slugs. Sticky traps monitor and reduce
+                        populations.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Organic Disease Management</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <article>
+                    <h3>🌿 Copper Fungicides</h3>
+                    <p>Approved for organic use against blight and other fungal diseases. Apply preventively before
+                        symptoms appear.</p>
+                </article>
+                <article>
+                    <h3>🥛 Baking Soda Spray</h3>
+                    <p>1 tablespoon per gallon of water helps prevent powdery mildew. Add a drop of dish soap to help it
+                        stick.</p>
+                </article>
+                <article>
+                    <h3>✂️ Sanitation</h3>
+                    <p>Remove infected leaves immediately. Don't compost diseased material. Clean tools between plants.
+                    </p>
+                </article>
+                <article>
+                    <h3>🌬️ Airflow</h3>
+                    <p>Space plants properly. Prune for air circulation. Fungi thrive in still, humid conditions—keep
+                        air moving.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>Accept Some Damage</h4>
+                <p>Organic gardening means coexisting with nature. A few holes in leaves are normal and often cosmetic.
+                    Intervention is only needed when damage threatens the crop.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Organic</a><a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

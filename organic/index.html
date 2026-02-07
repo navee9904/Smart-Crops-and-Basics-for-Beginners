@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Farming - Smart Crop Guide</title>
+    <meta name="description"
+        content="Chemical-free farming methods. Learn composting, natural pest control, and organic certification standards.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="index.html" class="active">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Organic Farming</h1>
+            <p>Grow food in harmony with nature using sustainable, chemical-free methods.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><span class="current">Organic</span></li>
+                </ol>
+            </nav>
+            <a href="../index.html" class="back-btn">Back to Home</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Why Go Organic?</h2>
+                    <p>Organic farming eliminates synthetic chemicals, focusing instead on building healthy soil
+                        ecosystems. The result is food that's better for you and the planet.</p>
+                    <p>From composting to companion planting, organic methods have been refined over generations and
+                        backed by modern science.</p>
+
+                    <div class="btn-row">
+                        <a href="soil-and-nutrients.html" class="btn btn-primary">Soil Health</a>
+                        <a href="pest-disease.html" class="btn btn-secondary">Natural Pest Control</a>
+                    </div>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/harvest-hands.jpg" alt="Organic harvest" loading="lazy">
+                    </div>
+                    <div class="collage-accent">
+                        <img src="../images/vegetable-field.jpg" alt="Vegetable field" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Organic Principles</h2>
+                <p>The pillars of sustainable agriculture.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>Soil Health</h3>
+                    <p>Feed the soil, not just the plant. Compost, cover crops, and minimal tillage build living soil
+                        teeming with beneficial organisms.</p>
+                </article>
+                <article>
+                    <h3>Biodiversity</h3>
+                    <p>Diverse plantings attract beneficial insects and reduce pest pressure. Monocultures invite
+                        problems; variety is resilience.</p>
+                </article>
+                <article>
+                    <h3>Closed-Loop Systems</h3>
+                    <p>Recycle nutrients on-farm. Crop residues become compost, animal manure fertilizes fields. Waste
+                        becomes resource.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>Start Simple</h4>
+                <p>You don't need certification to benefit from organic practices. Start by making compost, avoiding
+                    synthetic chemicals, and attracting beneficial insects with flowering herbs.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>Empowering growers with world-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links">
+                    <a href="../seeds/index.html">Seeds</a>
+                    <a href="../fertilizers/index.html">Fertilizers</a>
+                    <a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links">
+                    <a href="../contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

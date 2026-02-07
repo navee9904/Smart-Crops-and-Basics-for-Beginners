@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Grow - Smart Crop Guide</title>
+    <meta name="description" content="Step-by-step growing guide from planting to harvest.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Custom creative styles for this page */
+        .timeline-step {
+            position: relative;
+            padding: 2rem;
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border-left: 4px solid var(--clr-primary);
+        }
+
+        .timeline-step:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .timeline-step .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: var(--grad-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .timeline-step h3 {
+            margin-top: 0.5rem;
+            color: var(--clr-primary);
+        }
+
+        .hero-quote {
+            background: linear-gradient(135deg, rgba(26, 77, 46, 0.95), rgba(46, 125, 50, 0.9));
+            color: white;
+            padding: 3rem;
+            border-radius: var(--radius-xl);
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .hero-quote blockquote {
+            font-family: 'Fraunces', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .hero-quote cite {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .quick-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .quick-tip {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .quick-tip:hover {
+            transform: scale(1.05);
+        }
+
+        .quick-tip .icon {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand"><span class="logo-icon"></span><span>Smart Crop Guide</span></a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="index.html" class="active">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>🌱 How to Grow</h1>
+            <p>Your complete journey from seed to harvest</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Growing</a></li>
+                    <li><span class="current">How to Grow</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <!-- Hero Image Section -->
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>The Joy of Growing</h2>
+                    <p>There's something magical about watching a tiny seed transform into a thriving plant that feeds
+                        you and your family. Whether you're growing vegetables in raised beds or nurturing fruit trees,
+                        the process follows the same fundamental principles.</p>
+                    <p>This guide distills decades of agricultural wisdom into <strong>6 simple steps</strong> that will
+                        help you succeed, season after season.</p>
+
+                    <div class="quick-tips">
+                        <div class="quick-tip">
+                            <span class="icon">☀️</span>
+                            <strong>Light</strong>
+                        </div>
+                        <div class="quick-tip">
+                            <span class="icon">💧</span>
+                            <strong>Water</strong>
+                        </div>
+                        <div class="quick-tip">
+                            <span class="icon">🌡️</span>
+                            <strong>Temperature</strong>
+                        </div>
+                        <div class="quick-tip">
+                            <span class="icon">🪴</span>
+                            <strong>Soil</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/planting-seeds-hands.jpg" alt="Hands planting seeds in rich soil"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Steps -->
+        <section class="container section">
+            <div class="section-header">
+                <h2>The 6-Step Growing Process</h2>
+                <p>Follow these steps for a successful harvest</p>
+            </div>
+
+            <div class="grid grid-2" style="gap: 2.5rem;">
+                <div class="timeline-step">
+                    <span class="step-number">1</span>
+                    <h3>🌍 Prepare Your Soil</h3>
+                    <p>Test your soil pH and amend as needed. Add rich compost for fertility. Loosen soil to 12 inches
+                        depth for healthy root development.</p>
+                </div>
+                <div class="timeline-step">
+                    <span class="step-number">2</span>
+                    <h3>🌱 Plant Your Seeds</h3>
+                    <p>Follow spacing guidelines on seed packets. Plant at the correct depth—usually 2-3x the seed
+                        diameter. Water gently after planting.</p>
+                </div>
+                <div class="timeline-step">
+                    <span class="step-number">3</span>
+                    <h3>💧 Water Wisely</h3>
+                    <p>Water deeply but infrequently to encourage deep roots. Morning watering reduces disease. Use
+                        mulch to retain moisture.</p>
+                </div>
+                <div class="timeline-step">
+                    <span class="step-number">4</span>
+                    <h3>🧪 Feed Your Plants</h3>
+                    <p>Apply appropriate fertilizer based on crop needs and growth stage. Remember—more isn't always
+                        better. Avoid over-fertilizing.</p>
+                </div>
+                <div class="timeline-step">
+                    <span class="step-number">5</span>
+                    <h3>🔍 Monitor & Protect</h3>
+                    <p>Scout for pests and diseases weekly. Catch problems early before they spread. Healthy plants
+                        resist pests naturally.</p>
+                </div>
+                <div class="timeline-step">
+                    <span class="step-number">6</span>
+                    <h3>🥕 Harvest Time!</h3>
+                    <p>Pick crops at peak ripeness. Harvest in the morning when plants are hydrated. Many crops produce
+                        more when harvested regularly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspirational Quote -->
+        <section class="container section">
+            <div class="hero-quote">
+                <blockquote>"The garden suggests there might be a place where we can meet nature halfway."</blockquote>
+                <cite>— Michael Pollan</cite>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="container section">
+            <div class="section-header">
+                <h2>📺 Watch: Growing Basics</h2>
+                <p>Visual guide to getting started</p>
+            </div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/KY2MhKspNBc" title="Growing Basics Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Pro Tip -->
+        <section class="container section">
+            <div class="tip-box">
+                <h4>🌟 Success Secret</h4>
+                <p>The garden thrives on <strong>observation</strong>. Spend just 10 minutes daily walking through your
+                    garden. You'll catch problems early and learn to "read" what your plants are telling you. This
+                    simple habit separates good gardeners from great ones.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Growing</a><a href="../organic/index.html">Organic</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Chemical Pest Control - Smart Crop Guide</title>
+    <meta name="description" content="Biological and cultural methods to control pests without synthetic chemicals.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand"><span class="logo-icon"></span><span>Smart Crop Guide</span></a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="index.html" class="active">Pesticides</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Non-Chemical Pest Control</h1>
+            <p>Sustainable alternatives to synthetic pesticides.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Pesticides</a></li>
+                    <li><span class="current">Non-Chemical</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>Nature's Pest Control Army</h2>
+                    <p>Before synthetic pesticides existed, farmers relied on natural methods that worked with nature,
+                        not against it. These time-tested approaches are making a comeback as we seek sustainable
+                        solutions.</p>
+                    <p>Non-chemical pest control isn't just better for the environment—it often produces healthier, more
+                        resilient crops while saving money on expensive chemical inputs.</p>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/beneficial-insects.jpg"
+                            alt="Beneficial insects helping with natural pest control" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Cultural Controls</h2>
+                <p>Practices that prevent pest problems before they start.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>🔄 Crop Rotation</h3>
+                    <p>Change crop families each season. Breaks pest and disease cycles that build up in soil.</p>
+                </article>
+                <article>
+                    <h3>🌿 Companion Planting</h3>
+                    <p>Certain plants repel pests or attract beneficials. Basil near tomatoes, marigolds throughout
+                        garden.</p>
+                </article>
+                <article>
+                    <h3>🧹 Sanitation</h3>
+                    <p>Remove crop debris promptly. Pests overwinter in old plant material. Clean tools between uses.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Biological Controls</h2>
+                <p>Using nature's pest fighters.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>🐞 Beneficial Insects</h3>
+                    <p>Ladybugs eat aphids. Lacewings consume multiple pest species. Create habitat with flowering
+                        plants.</p>
+                </article>
+                <article>
+                    <h3>🦎 Natural Predators</h3>
+                    <p>Birds, toads, and lizards patrol for insects. Provide shelter and water to encourage them.</p>
+                </article>
+                <article>
+                    <h3>🦠 Bt (Bacillus thuringiensis)</h3>
+                    <p>Natural bacteria that kills caterpillars when ingested. Safe for beneficials and humans.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Physical Controls</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <article>
+                    <h3>🪤 Traps</h3>
+                    <p>Yellow sticky traps for whiteflies. Pheromone traps for specific moths. Beer traps for slugs.</p>
+                </article>
+                <article>
+                    <h3>🕸️ Barriers</h3>
+                    <p>Row covers block flying insects. Copper tape deters slugs. Netting protects from birds.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>IPM Approach</h4>
+                <p>Combine multiple methods. Cultural and biological controls form the foundation. Chemical intervention
+                    is the last resort, not the first.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Pesticides</a><a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

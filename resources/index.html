@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Smart Crop Guide</title>
+    <meta name="description"
+        content="Farming calculators, printable guides, and external resources to support your agricultural journey.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="index.html" class="active">Resources</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Farmer's Toolkit</h1>
+            <p>Calculators, charts, and trusted external resources to support your farming journey.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><span class="current">Resources</span></li>
+                </ol>
+            </nav>
+            <a href="../index.html" class="back-btn">Back to Home</a>
+        </div>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Quick Tools</h2>
+                <p>Practical resources for everyday farming decisions.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>🌱 Planting Calendar</h3>
+                    <p>Know when to plant based on your region's frost dates. Time your crops for optimal germination
+                        and harvest.</p>
+                </article>
+                <article>
+                    <h3>📐 Spacing Calculator</h3>
+                    <p>Calculate how many plants fit in your garden bed with proper spacing for healthy growth.</p>
+                </article>
+                <article>
+                    <h3>💧 Watering Guide</h3>
+                    <p>Reference chart for watering frequency and depth by crop type. Avoid over and under-watering.</p>
+                </article>
+                <article>
+                    <h3>🧪 NPK Reference</h3>
+                    <p>Quick lookup for fertilizer ratios by crop. Match nutrients to plant needs at each growth stage.
+                    </p>
+                </article>
+                <article>
+                    <h3>🐛 Pest ID Chart</h3>
+                    <p>Visual guide to common garden pests and their natural predators. Know what you're dealing with.
+                    </p>
+                </article>
+                <article>
+                    <h3>📚 USDA Library</h3>
+                    <p>Access the world's largest agricultural research library for in-depth scientific information.</p>
+                    <a href="https://www.nal.usda.gov/" target="_blank" class="btn btn-secondary"
+                        style="margin-top:1rem;">Visit USDA</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>Bookmark This Page</h4>
+                <p>Keep these tools handy throughout your growing season. We're constantly adding new resources based on
+                    user feedback.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>Empowering growers with world-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links">
+                    <a href="../seeds/index.html">Seeds</a>
+                    <a href="../fertilizers/index.html">Fertilizers</a>
+                    <a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links">
+                    <a href="../contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

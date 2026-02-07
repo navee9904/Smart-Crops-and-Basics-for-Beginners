@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Fungicides - Smart Crop Guide</title>
+    <meta name="description"
+        content="Learn about different types of fungicides and how they work to protect your crops.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand"><span class="logo-icon"></span><span>Smart Crop Guide</span></a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="../fertilizers/index.html">Fertilizers</a></li>
+                <li><a href="index.html" class="active">Fungicides</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Types of Fungicides</h1>
+            <p>Understanding how different fungicides work.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Fungicides</a></li>
+                    <li><span class="current">Types</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Classification by Action</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <article>
+                    <h3>Contact Fungicides</h3>
+                    <p>Stay on plant surfaces and kill spores on contact. Must be applied before infection. Re-apply
+                        after rain as they wash off easily.</p>
+                </article>
+                <article>
+                    <h3>Systemic Fungicides</h3>
+                    <p>Absorbed into plant tissues. Can treat existing infections and provide longer-lasting protection.
+                        Less affected by rainfall.</p>
+                </article>
+                <article>
+                    <h3>Preventive</h3>
+                    <p>Applied before disease appears. Creates a protective barrier. Essential when conditions favor
+                        disease development.</p>
+                </article>
+                <article>
+                    <h3>Curative</h3>
+                    <p>Can stop disease after infection begins. More expensive but useful when early symptoms appear.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Common Active Ingredients</h2>
+            </div>
+
+            <table class="compare">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Examples</th>
+                        <th>Diseases Controlled</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Copper-based</td>
+                        <td>Copper sulfate, Bordeaux mix</td>
+                        <td>Blight, downy mildew</td>
+                    </tr>
+                    <tr>
+                        <td>Sulfur</td>
+                        <td>Elemental sulfur</td>
+                        <td>Powdery mildew, rust</td>
+                    </tr>
+                    <tr>
+                        <td>Chlorothalonil</td>
+                        <td>Daconil</td>
+                        <td>Broad-spectrum</td>
+                    </tr>
+                    <tr>
+                        <td>Triazoles</td>
+                        <td>Propiconazole</td>
+                        <td>Rust, leaf spot</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>Rotation is Key</h4>
+                <p>Alternate between fungicides with different modes of action to prevent resistance development.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Fungicides</a><a href="../growing/index.html">Growing</a>
+                </div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Nutrients - Smart Crop Guide</title>
+    <meta name="description"
+        content="Learn about secondary nutrients and micronutrients essential for healthy plant growth.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <nav class="container navbar">
+            <a href="../index.html" class="nav-brand">
+                <span class="logo-icon"></span>
+                <span>Smart Crop Guide</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../seeds/index.html">Seeds</a></li>
+                <li><a href="index.html" class="active">Fertilizers</a></li>
+                <li><a href="../pesticides/index.html">Protection</a></li>
+                <li><a href="../growing/index.html">Growing</a></li>
+                <li><a href="../organic/index.html">Organic</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Secondary & Micronutrients</h1>
+            <p>Beyond NPK: The trace elements that complete plant nutrition.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Fertilizers</a></li>
+                    <li><span class="current">Other Nutrients</span></li>
+                </ol>
+            </nav>
+            <a href="index.html" class="back-btn">Back to Section</a>
+        </div>
+
+        <section class="container section">
+            <div class="two-column">
+                <div>
+                    <h2>The Hidden Heroes of Plant Health</h2>
+                    <p>While NPK gets all the attention, secondary nutrients and micronutrients are equally vital.
+                        Without them, plants can't complete essential processes like photosynthesis, enzyme function,
+                        and cell wall formation.</p>
+                    <p>Think of micronutrients as the vitamins for your plants—needed in small amounts but absolutely
+                        essential for health.</p>
+                </div>
+
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="../images/micronutrients-leaves.jpg"
+                            alt="Healthy green plant leaves showing proper nutrition" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Secondary Nutrients</h2>
+                <p>Needed in moderate amounts after NPK.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>Calcium (Ca)</h3>
+                    <p>Cell wall structure and root development. Deficiency causes blossom end rot in tomatoes.</p>
+                </article>
+                <article>
+                    <h3>Magnesium (Mg)</h3>
+                    <p>Central component of chlorophyll. Deficiency shows as yellowing between leaf veins.</p>
+                </article>
+                <article>
+                    <h3>Sulfur (S)</h3>
+                    <p>Protein synthesis and enzyme function. Important for onions, garlic, and brassicas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="section-header">
+                <h2>Micronutrients</h2>
+                <p>Needed in tiny amounts but absolutely essential.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <article>
+                    <h3>Iron (Fe)</h3>
+                    <p>Chlorophyll production. Deficiency causes interveinal chlorosis (yellow leaves, green veins).</p>
+                </article>
+                <article>
+                    <h3>Zinc (Zn)</h3>
+                    <p>Enzyme activation and growth hormones. Deficiency causes stunted growth and small leaves.</p>
+                </article>
+                <article>
+                    <h3>Boron (B)</h3>
+                    <p>Cell wall formation and flowering. Deficiency causes hollow stems and poor fruit set.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section">
+            <div class="tip-box">
+                <h4>When to Supplement</h4>
+                <p>Most soils contain adequate micronutrients. Only supplement if you see deficiency symptoms or soil
+                    tests indicate a need. Too much can be toxic.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h4>Smart Crop Guide</h4>
+                <p>World-class agricultural knowledge.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div class="footer-links"><a href="index.html">Fertilizers</a><a
+                        href="../growing/index.html">Growing</a></div>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="footer-links"><a href="../contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 Smart Crop Guide.</div>
+    </footer>
+
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-links');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => menu.classList.toggle('show'));
+        }
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>
